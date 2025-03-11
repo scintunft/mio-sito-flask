@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -72,7 +72,7 @@
         section {
             margin-top: 150px;
             padding: 80px 50px;
-            background-image: url('images/logo-scintu.jpg');
+            background-image: url('/static/images/logo-scintu.jpg');
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -272,7 +272,7 @@
         <h2>I Personaggi di Scintu</h2>
         <p>Ogni scheletro è un guerriero leggendario con poteri antichi. Risveglia e colleziona gli scheletri per scoprire i segreti di un mondo perduto!</p>
         <div class="characters-images">
-            <img src="images/personaggio2.jpg" alt="Personaggio 2">
+            <img src="{{ url_for('static', filename='images/personaggio2.jpg') }}" alt="personaggio2">
 
         </div>
     </section>
@@ -281,9 +281,9 @@
         <h2>Edizioni Limitate</h2>
         <p>Non perdere l'opportunità di possedere un'opera d'arte unica! Le edizioni limitate di Scintu sono disponibili solo per un tempo limitato.</p>
         <div class="limited-editions-images">
-            <img src="images/comune.jpg" alt="comune">
-            <img src="images/mitica.jpg" alt="mitica">
-            <img src="images/leggendaria.jpg" alt="leggendaria">
+            <img src="{{ url_for('static', filename='images/comune.jpg') }}" alt="comune">
+            <img src="{{ url_for('static', filename='images/mitica.jpg') }}" alt="mitica">
+            <img src="{{ url_for('static', filename='images/leggendaria.jpg') }}" alt="leggendaria">
         </div>
     </section>
 
